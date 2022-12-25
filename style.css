@@ -1,0 +1,148 @@
+@import url(http://fonts.googleapis.com/earlyaccess/notosanskr.css);
+
+:root {
+  --default-black: #222;
+  --main-color: #305741;
+}
+
+body {
+  font-family: 'Noto Sans KR', sans-serif;
+}
+
+.hb__index {
+  display: flex;
+  flex-direction: column;
+  gap: 8rem;
+}
+.hb__content-1-sub-title {
+  font-weight: 500;
+  font-size: 1.75rem;
+  line-height: 1em;
+}
+.hb__content-1-title {
+  font-weight: 500;
+  font-size: 3.75rem;
+  line-height: 1em;
+}
+
+.hb__content-1-desc {
+  margin-top: 4rem;
+  font-weight: 300;
+}
+.hb__content-2,
+.hb__content-2-row {
+  display: flex;
+  gap: 3em;
+  flex-wrap: wrap;
+}
+.hb__content-2 {
+  flex-direction: column;
+}
+.hb__content-2-item-figure {
+  margin: 0px;
+  width: 375px;
+}
+.hb__content-2-item-figure img {
+  max-width: 100%;
+  opacity: 0;
+
+  transition: opacity 1s ease-in-out;
+}
+.hb__content-2-item-figure img.show {
+  opacity: 1;
+}
+.hb__content-2-item-title {
+  font-size: 1.125rem;
+  font-weight: 700;
+}
+.text-hb {
+  color: var(--main-color);
+}
+
+.hb__index {
+  width: 100%;
+  padding: 0 1rem;
+  margin: 0 auto;
+  max-width: 800px;
+  overflow-x: hidden;
+}
+
+.hb__content-3 {
+  margin-top: 10rem;
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+}
+.hb__content-3-row {
+  display: flex;
+  justify-content: space-between;
+}
+.hb__content-3-row--reversed {
+  flex-direction: row-reverse;
+  text-align: right;
+}
+.hb__content-3-row img {
+  max-width: 400px;
+}
+.hb__content-4-imgs {
+  max-width: 100%;
+}
+.hb__content-4-imgs img {
+}
+.hb__content-3-item-text {
+  display: flex;
+  flex-direction: column;
+  gap: 2em;
+}
+.hb__content-3-item-text-head {
+  font-size: 1.35rem;
+  font-weight: 600;
+}
+.hb__content-3-item-text-body {
+  white-space: nowrap;
+  font-weight: 300;
+}
+.hb__content-4-title {
+  font-size: 1.125em;
+  font-weight: 700;
+}
+.hb__content-4 {
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
+}
+
+.hb__content-2-item-img-wrapper {
+  position: relative;
+  min-height: 450px;
+}
+.hb__content-2-item-img-wrapper img {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+@media screen and (max-width: 1200px) {
+  .hb__index {
+    max-width: 800px;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .hb__index {
+    max-width: 570px;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .hb__content-2-item,
+  .hb__content-2-item-figure {
+    width: 100%;
+  }
+  .hb__content-3-row {
+    flex-direction: column-reverse;
+  }
+  .hb__content-4-imgs {
+    flex-wrap: wrap;
+  }
+}
