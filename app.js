@@ -11,6 +11,10 @@ const setSwiper = (selector) => {
     },
     breakpoints: {
       0: {
+        slidesPerView: 1,
+        spaceBetween: 0,
+      },
+      576: {
         slidesPerView: 2,
         spaceBetween: 20,
       },

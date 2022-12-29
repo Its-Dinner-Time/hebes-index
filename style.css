@@ -1,6 +1,7 @@
 @import url(https://fonts.googleapis.com/earlyaccess/notosanskr.css);
 
 :root {
+  font-size: 20px;
   --default-black: #222;
   --main-color: #305741;
   --banner-background: #d1c8c1;
@@ -97,7 +98,7 @@ body {
 .hb__content-2,
 .hb__content-2-row {
   display: flex;
-  gap: 3em;
+  gap: 30px;
   flex-wrap: wrap;
 }
 .hb__content-2 {
@@ -107,6 +108,8 @@ body {
   transition: all 1s ease-out;
   opacity: 0;
   translate: 0 2rem;
+  text-decoration: none;
+  color: var(--default-black);
 }
 .hb__content-2-item.show {
   opacity: 1;
@@ -116,7 +119,7 @@ body {
   margin: 0px;
   width: 375px;
 }
-.hb__content-2-item-figure img {
+.hb__content-2-item-img-wrapper img {
   width: 100%;
   height: 100%;
   object-fit: cover;
@@ -125,13 +128,28 @@ body {
 
   transition: opacity 1s ease-in-out;
 }
-.hb__content-2-item-figure img.show {
+.hb__content-2-item-img-wrapper img.show {
   opacity: 1;
 }
 .hb__content-2-item-title {
   font-size: 1.125rem;
   font-weight: 700;
 }
+.hb__content-2-item-img-wrapper {
+  position: relative;
+  min-height: 450px;
+  overflow: hidden;
+}
+.hb__content-2-item-img-wrapper img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  transition: scale 0.3s ease-out;
+}
+.hb__content-2-item:hover .hb__content-2-item-img-wrapper img {
+  scale: 1.05;
+}
+
 .text-hb {
   color: var(--main-color);
 }
@@ -152,8 +170,8 @@ body {
   background-color: rgba(209, 200, 193, 1);
   background-image: url('./assets/img/content3/background.jpg');
   background-blend-mode: multiply;
-  background-size: 200%;
-  background-position-x: 30%;
+  background-size: cover;
+  background-position: center;
 }
 .hb__content-3::before {
   content: '';
@@ -181,6 +199,10 @@ body {
 }
 .hb__content-3-row img {
   max-width: 400px;
+  width: 100%;
+}
+.hb__content-3-row:not(.hb__content-3-row--reversed) img {
+  align-self: flex-end;
 }
 .hb__content-4-imgs {
   max-width: 100%;
@@ -203,6 +225,7 @@ body {
 .hb__content-4-title {
   font-size: 1.125em;
   font-weight: 500;
+  word-break: keep-all;
 }
 .hb__content-4 {
   display: flex;
@@ -211,33 +234,31 @@ body {
   margin-bottom: 100px;
 }
 
-.hb__content-2-item-img-wrapper {
-  position: relative;
-  min-height: 450px;
-}
-.hb__content-2-item-img-wrapper img {
-  position: absolute;
-  top: 0;
-  left: 0;
-}
-
 @media screen and (max-width: 1200px) {
   .hb__container {
     max-width: 800px;
   }
 }
-@media screen and (max-width: 1024px) {
-  .hb__content-3 {
-    background-size: cover;
-  }
-}
+
 @media screen and (max-width: 800px) {
+}
+
+@media screen and (max-width: 800px) {
+  :root {
+    font-size: 16px;
+  }
   .hb__container {
     max-width: 570px;
   }
-}
-
-@media screen and (max-width: 768px) {
+  .hb__banner {
+    height: 450px;
+  }
+  .hb__banner-bottom {
+    height: 300px;
+  }
+  .hb__banner-img-wrapper img {
+    min-height: 340px;
+  }
   .hb__content-1-title {
     margin-bottom: 0;
   }
