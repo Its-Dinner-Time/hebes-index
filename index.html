@@ -14,9 +14,15 @@
   </head>
 
   <body>
-    <div class="hb__index">
+    <div class="hb__index hb__container">
       <!-- banner -->
-      <div class="hb__banner"></div>
+      <div class="hb__banner">
+        <div class="hb__banner-img-wrapper" data-hb-target="banner">
+          <img src="./assets/img/banner/2.jpg" alt="" />
+          <img src="./assets/img/banner/1.jpg" class="show" alt="" />
+        </div>
+        <div class="hb__banner-bottom"></div>
+      </div>
 
       <div class="hb__content-1">
         <div class="hb__content-1-title-wrapper">
@@ -25,13 +31,19 @@
         </div>
 
         <div class="hb__content-1-desc">
-          독서만 하면 재미 없잖아요 <br />
-          헤베스가 부산에서 수년간 유지 될 수 있었던 이유,<br /><br />
+          <span
+            >독서만 하면 재미 없잖아요<br />
+            헤베스가 부산에서 수년간 유지 될 수 있었던 이유,
+          </span>
+          <br /><br />
 
-          독서 뿐만 아니라 글쓰기, 와인 등 다양한 컨텐츠를 함께 하고<br />
-          컨텐츠가 끝나면 주어지는 시간으로 더 편하게 서로를 알아가며 대화할 수 있어요<br /><br />
+          <span
+            >독서 뿐만 아니라 글쓰기, 와인 등 다양한 컨텐츠를 함께 하고<br />
+            컨텐츠가 끝나면 주어지는 시간으로 더 편하게 서로를 알아가며 대화할 수 있어요
+          </span>
+          <br /><br />
 
-          이제는 대구에서 더욱 새로워진 헤베스와 함께해요
+          <span>이제는 대구에서 더욱 새로워진 헤베스와 함께해요</span>
         </div>
       </div>
 
@@ -54,8 +66,8 @@
             <div class="hb__content-2-item-figure">
               <div class="hb__content-2-item-img-wrapper" data-hb-target="bookClub">
                 <img class="show" src="./assets/img/content2/2-1.jpg" alt="" />
-                <img class="" src="./assets/img/content2/2-2.jpg" alt="" />
-                <img class="" src="./assets/img/content2/2-3.jpg" alt="" />
+                <!-- <img class="" src="./assets/img/content2/2-2.jpg" alt="" />
+                <img class="" src="./assets/img/content2/2-3.jpg" alt="" /> -->
               </div>
               <div>
                 정해진 주제의 책을 읽어요 <br />
@@ -90,29 +102,32 @@
       </div>
 
       <div class="hb__content-3">
-        <div class="hb__content-3-row">
-          <div class="hb__content-3-item-text">
-            <div class="hb__content-3-item-text-head">헤베스는 <span class="text-hb">발전</span>을 추구해요</div>
-            <div class="hb__content-3-item-text-body">
-              헤베스는 새로운 경험을 통해 <br />
-              나자신의 발전과 다양한 인맥들을 알아가며<br />
-              자신이 성장하는 것을 알아갈 수 있어요
+        <div class="hb__content-3-wrapper hb__container">
+          <div class="hb__content-3-row">
+            <div class="hb__content-3-item-text">
+              <div class="hb__content-3-item-text-head">헤베스는 <span class="text-hb">발전</span>을 추구해요</div>
+              <div class="hb__content-3-item-text-body">
+                헤베스는 새로운 경험을 통해 <br />
+                나자신의 발전과 다양한 인맥들을 알아가며<br />
+                자신이 성장하는 것을 알아갈 수 있어요
+              </div>
             </div>
+            <img src="./assets/img/content3/1.png" alt="" class="hb__content-3-item-img" />
           </div>
-          <img src="./assets/img/content3/1.png" alt="" class="hb__content-3-item-img" />
-        </div>
-        <div class="hb__content-3-row hb__content-3-row--reversed">
-          <div class="hb__content-3-item-text">
-            <div class="hb__content-3-item-text-head">헤베스는 <span class="text-hb">다양함</span>을 추구해요</div>
-            <div class="hb__content-3-item-text-body">
-              헤베스는 독서, 글쓰기, 와인등 다양한 활동으로 <br />
-              다양한 사람들을 만나며 함께 하는 것의 즐거움을<br />
-              알아갈 수 있어요
+          <div class="hb__content-3-row hb__content-3-row--reversed">
+            <div class="hb__content-3-item-text">
+              <div class="hb__content-3-item-text-head">헤베스는 <span class="text-hb">다양함</span>을 추구해요</div>
+              <div class="hb__content-3-item-text-body">
+                헤베스는 독서, 글쓰기, 와인등 다양한 활동으로 <br />
+                다양한 사람들을 만나며 함께 하는 것의 즐거움을<br />
+                알아갈 수 있어요
+              </div>
             </div>
+            <img src="./assets/img/content3/2.png" alt="" class="hb__content-3-item-img" />
           </div>
-          <img src="./assets/img/content3/4.jpg" alt="" class="hb__content-3-item-img" />
         </div>
       </div>
+
       <div class="hb__content-4">
         <div class="hb__content-4-title">
           헤베스를 통해 <span class="text-hb">다양한 발전</span>을 함께하는건 어때요? <br />
